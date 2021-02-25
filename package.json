@@ -1,0 +1,14 @@
+{
+  "name": "bankui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eugene Yakovlev",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-sass": "^4.1.0"
+  }
+}

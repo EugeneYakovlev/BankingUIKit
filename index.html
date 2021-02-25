@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Bank UI</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="col">
+        <div class="block setLimitBlock">
+          <div class="titleWrap">
+            <div class="title">Set credit limit</div>
+            <div class="currentLimit">$600.00</div>
+          </div>
+          <div class="setLimitWrap">
+            <div class="priceRangeLine">
+              <div class="priceRangeFill">
+                <div class="priceRangeThumb thumb"></div>
+              </div>
+            </div>
+            <div class="priceRangeNumbers row">
+              <div class="min">$0</div>
+              <div class="max">$1,200.00</div>
+            </div>
+          </div>
+        </div>
+        <div class="block paymentsBlock">
+          <div class="titleWrap">
+            <div class="title">Transactions</div>
+            <a href="#" class="rightTitle">Details</a>
+          </div>
+          <div class="paymentsWrap">
+            <div class="paymentBlock row">
+              <div class="paymentIcon">
+                <img src="./images/icons/netflix.png" alt="" />
+              </div>
+              <div class="paymentName">
+                <div class="company">Netflix</div>
+                <div class="category">Entertainment</div>
+              </div>
+              <div class="paymentPrice">-$19.99</div>
+            </div>
+            <div class="paymentBlock refundPayment row">
+              <div class="paymentIcon">
+                <img src="./images/icons/apple.svg" alt="" />
+              </div>
+              <div class="paymentName">
+                <div class="company">Apple</div>
+                <div class="category">Refund</div>
+              </div>
+              <div class="paymentPrice">$9.99</div>
+            </div>
+            <div class="paymentBlock row">
+              <div class="paymentIcon">
+                <img src="./images/icons/donut.png" alt="" />
+              </div>
+              <div class="paymentName">
+                <div class="company">Donuts club</div>
+                <div class="category">Сafes and restaurants</div>
+              </div>
+              <div class="paymentPrice">-$16.48</div>
+            </div>
+            <div class="paymentBlock row">
+              <div class="paymentIcon">
+                <img src="./images/icons/youtube.svg" alt="" />
+              </div>
+              <div class="paymentName">
+                <div class="company">YouTube Premium</div>
+                <div class="category">Entertainment</div>
+              </div>
+              <div class="paymentPrice">-$9.99</div>
+            </div>
+          </div>
+        </div>
+        <div class="block statBlock">
+          <div class="titleWrap">
+            <div class="title">Statistics</div>
+            <div class="rightTitle">
+              <span class="blue">Spent</span>
+              <span class="orange">Income</span>
+            </div>
+          </div>
+          <div class="statWrap">
+            <div class="statRow">
+              <div class="statBlock">
+                <div class="statInfoTooltip tooltip">
+                  <span class="blue">$400.43</span>
+                  <span class="orange">$148.11</span>
+                </div>
+                <div class="statLine blue" style="height: 72%"></div>
+                <div class="statLine orange" style="height: 50%"></div>
+                <div class="statDay">Mon 24</div>
+              </div>
+              <div class="statBlock tapped">
+                <div class="statInfoTooltip tooltip">
+                  <span class="blue">$400.43</span>
+                  <span class="orange">$148.11</span>
+                </div>
+                <div class="statLine blue" style="height: 63.85%"></div>
+                <div class="statLine orange" style="height: 31.5%"></div>
+                <div class="statDay">Tue 25</div>
+              </div>
+              <div class="statBlock">
+                <div class="statInfoTooltip tooltip">
+                  <span class="blue">$400.43</span>
+                  <span class="orange">$148.11</span>
+                </div>
+                <div class="statLine blue" style="height: 21.5%"></div>
+                <div class="statLine orange" style="height: 76.9%"></div>
+                <div class="statDay">Wed 26</div>
+              </div>
+              <div class="statBlock">
+                <div class="statInfoTooltip tooltip">
+                  <span class="blue">$400.43</span>
+                  <span class="orange">$148.11</span>
+                </div>
+                <div class="statLine blue" style="height: 83.05%"></div>
+                <div class="statLine orange" style="height: 70.76%"></div>
+                <div class="statDay">Thu 27</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="block statBlock graphBlock">
+          <div class="titleWrap">
+            <div class="title">Statistics</div>
+            <div class="rightTitle">
+              <a href="#" class="graphFilter active">Weekly</a>
+              <a href="#" class="graphFilter">Monthly</a>
+              <a href="#" class="graphFilter">Yearly</a>
+            </div>
+          </div>
+          <div class="statWrap">
+            <div class="statRow">
+              <div class="graphLine">
+              </div>
+              <div class="tappedWrap">
+                <div class="tooltip">
+                  $1,200.43
+                </div>
+                <div class="thumb"></div>
+              </div>
+            </div>
+            <div class="statDays">
+              <span>Sun 23</span>
+              <span>Mon 24</span>
+              <span>Tue 25</span>
+              <span>Wed 26</span>
+              <span class="active">Thu 27</span>
+              <span>Fri 28</span>
+              <span>Sat 29</span>
+            </div>
+          </div>
+        </div>
+        <div class="block calendarBlock">
+          <div class="calendarHead">
+            <a href="#" class="prevButton arrowButton"></a>
+            <div class="calendarTitle">
+              <span class="month">August</span>
+              <span class="year">2020</span>
+            </div>
+            <a href="#" class="nextButton arrowButton"></a>
+          </div>
+          <div class="calendarWrap">
+            <div class="weeks">
+              <div class="calendarTableHead week">
+                <span class="unactive">Sun</span>
+                <span>Mon</span>
+                <span>Tue</span>
+                <span>Wed</span>
+                <span>Thu</span>
+                <span>Fri</span>
+                <span class="unactive">Sat</span>
+              </div>
+              <div class="week">
+                <span>26</span>
+                <span>27</span>
+                <span>28</span>
+                <span>29</span>
+                <span>30</span>
+                <span>31</span>
+                <span>01</span>
+              </div>
+
+              <div class="week">
+                <span>02</span>
+                <span class="event">03</span>
+                <span class="active">04</span>
+                <span class="active">05</span>
+                <span class="active">06</span>
+                <span class="active">07</span>
+                <span>08</span>
+              </div>
+
+              <div class="week">
+                <span>09</span>
+                <span>10</span>
+                <span>11</span>
+                <span class="active">12</span>
+                <span>13</span>
+                <span>14</span>
+                <span>15</span>
+              </div>
+
+              <div class="week">
+                <span>16</span>
+                <span class="active">17</span>
+                <span class="active">18</span>
+                <span>19</span>
+                <span class="selected startPoint">20</span>
+                <span class="selected">21</span>
+                <span class="selected active">22</span>
+              </div>
+
+              <div class="week">
+                <span class="selected">23</span>
+                <span class="selected active">24</span>
+                <span class="selected active endPoint">25</span>
+                <span class="event">26</span>
+                <span>27</span>
+                <span>28</span>
+                <span>29</span>
+              </div>
+              <div class="week">
+                <span>30</span>
+                <span class="active">31</span>
+                <span class="active">01</span>
+                <span class="active">02</span>
+                <span class="active">03</span>
+                <span class="active">04</span>
+                <span class="active">05</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="titleWrap">
+            <div class="title">Exchange</div>
+            <a href="#" class="rightTitle">History</a>
+          </div>
+          <div class="exchangeWrap">
+            <div class="inputWrap">
+              <div class="label">Sell</div>
+              <div class="input">
+                <input type="number" value="100" />
+                <select disabled>
+                  <option value="usd" selected>USD</option>
+                  <option value="gbp">GBP</option>
+                  <option value="eur">EUR</option>
+                  <option value="chf">CHF</option>
+                </select>
+              </div>
+            </div>
+            <div class="inputWrap">
+              <div class="label">Buy</div>
+              <div class="input">
+                <input type="number" value="100" />
+                <select disabled>
+                  <option value="usd">USD</option>
+                  <option value="gbp" selected>GBP</option>
+                  <option value="eur">EUR</option>
+                  <option value="chf">CHF</option>
+                </select>
+              </div>
+            </div>
+            <div class="exchangeBar">
+              <div class="valueIcons">
+                <div class="icon from">
+                  <img src="images/icons/flags/usd.jpg" alt="" />
+                </div>
+                <div class="icon to">
+                  <img src="images/icons/flags/gb.jpg" alt="" />
+                </div>
+              </div>
+              <div class="exchangeInfo">
+                <div class="currency">1 USD = 0.7201 GBP</div>
+                <div class="date">18 Feb 10:48 UTC</div>
+              </div>
+              <a href="#" class="exchangeButton"></a>
+            </div>
+            <a href="#" class="convertButton">Convert</a>
+          </div>
+        </div>
+        <div class="block limitBlock">
+          <div class="limitsRow row">
+            <div class="limitBlock credit">
+              <div class="limitIcon">
+                <img src="images/icons/diagram0.svg" alt="" />
+              </div>
+              <div class="limitInfo">
+                <div class="name">Credit limit</div>
+                <div class="priceRange row">
+                  <div class="price">$750</div>
+                  <div class="range">/ $1,000</div>
+                </div>
+              </div>
+            </div>
+            <div class="limitBlock online">
+              <div class="limitIcon">
+                <img src="images/icons/diagram.svg" alt="" />
+              </div>
+              <div class="limitInfo">
+                <div class="name">Online limit</div>
+                <div class="priceRange row">
+                  <div class="price">$1,200</div>
+                  <div class="range">/ $2,000</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="block myCards">
+          <div class="titleWrap">
+            <div class="title">My Cards</div>
+            <a href="#" class="rightTitle">Manage</a>
+          </div>
+          <div class="cardsWrap">
+            <div class="cardsRow">
+              <div class="cardBlock visa">
+                <div class="row">
+                  <div class="cardBankIcon">
+                    <img src="images/icons/BCA_logo.svg" alt="" />
+                  </div>
+                  <div class="cardNum">8059</div>
+                </div>
+                <div class="row">
+                  <div class="cardBalanceWrap">
+                    <div class="label">Credit card</div>
+                    <div class="value cardBalance">$ 1,950.54</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardBlock mc">
+                <div class="row">
+                  <div class="cardBankIcon">
+                    <img src="images/icons/unibank_logo.svg" alt="" />
+                  </div>
+                  <div class="cardNum">3295</div>
+                </div>
+                <div class="row">
+                  <div class="cardBalanceWrap">
+                    <div class="label">Debit card</div>
+                    <div class="value cardBalance">$ 2,050.41</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="addButton"></a>
+          </div>
+        </div>
+        <div class="block paymentsBlock">
+          <div class="titleWrap">
+            <div class="title">Transactions</div>
+            <a href="#" class="rightTitle">Details</a>
+          </div>
+          <div class="paymentsWrap">
+            <div class="paymentBlock sentPayment row">
+              <div class="paymentIcon">
+                <img src="./images/people/h1.jpg" alt="" />
+              </div>
+              <div class="paymentName">
+                <div class="company">Erin Torff</div>
+                <div class="category">Sent</div>
+              </div>
+              <div class="paymentPrice">-$19.99</div>
+            </div>
+            <div class="paymentBlock receivePayment row">
+              <div class="paymentIcon">
+                <img src="./images/people/h2.jpg" alt="" />
+              </div>
+              <div class="paymentName">
+                <div class="company">Zaire Saris</div>
+                <div class="category">Receive</div>
+              </div>
+              <div class="paymentPrice">$29.99</div>
+            </div>
+            <div class="paymentBlock sentPayment row">
+              <div class="paymentIcon">
+                <img src="./images/people/h3.jpg" alt="" />
+              </div>
+              <div class="paymentName">
+                <div class="company">Giana Vaccaro</div>
+                <div class="category">Sent</div>
+              </div>
+              <div class="paymentPrice">-$16.48</div>
+            </div>
+            <div class="paymentBlock receivePayment row">
+              <div class="paymentIcon">
+                <img src="./images/people/h1.jpg" alt="" />
+              </div>
+              <div class="paymentName">
+                <div class="company">Erin Torff</div>
+                <div class="category">Receive</div>
+              </div>
+              <div class="paymentPrice">$9.99</div>
+            </div>
+          </div>
+        </div>
+        <div class="block stockBlock">
+          <div class="titleWrap">
+            <div class="title">Stock Price</div>
+            <a href="#" class="rightTitle">
+              <span>Details</span>
+            </a>
+          </div>
+          <div class="stockWrap">
+            <div class="stockRow row">
+              <div class="stockName">
+                <div class="name">NIKE</div>
+                <div class="label">NIKE, Inc</div>
+              </div>
+              <div class="stockGraph">
+                <img src="images/icons/stock/stock.svg" alt="">
+              </div>
+              <div class="stockPrice">
+                <div class="price">102.63</div>
+                <div class="coef up">
+                  +1.41%
+                </div>
+              </div>
+            </div>
+            <div class="stockRow row">
+              <div class="stockName">
+                <div class="name">DOW J</div>
+                <div class="label">Dow Jones Industr...</div>
+              </div>
+              <div class="stockGraph">
+                <img src="images/icons/stock/stock2.svg" alt="">
+              </div>
+              <div class="stockPrice">
+                <div class="price">7,272.30</div>
+                <div class="coef down">
+                  -1.09%
+                </div>
+              </div>
+            </div>
+            <div class="stockRow row">
+              <div class="stockName">
+                <div class="name">SBUX</div>
+                <div class="label">Starbucks Corpora...</div>
+              </div>
+              <div class="stockGraph">
+                <img src="images/icons/stock/stock3.svg" alt="">
+              </div>
+              <div class="stockPrice">
+                <div class="price">182.37</div>
+                <div class="coef down">
+                  -1.24%
+                </div>
+              </div>
+            </div>
+            <div class="stockRow row">
+              <div class="stockName">
+                <div class="name">TESLA</div>
+                <div class="label">Tesla</div>
+              </div>
+              <div class="stockGraph">
+                <img src="images/icons/stock/stock4.svg" alt="">
+              </div>
+              <div class="stockPrice">
+                <div class="price">212.63</div>
+                <div class="coef up">
+                  +1.17%
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
