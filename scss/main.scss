@@ -31,6 +31,9 @@ $sfProBold: 'SF Pro Display Bold';
   }
 
   .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 344px;
     width: 100%;
     margin: 60px 15px;
@@ -51,110 +54,106 @@ $sfProBold: 'SF Pro Display Bold';
         overflow: hidden;
       }
 
-      &.graphBlock {
-        padding-bottom: 20px;
-
-        .titleWrap {
-          padding-right: 13px;
-          .rightTitle {
-            .graphFilter {
-              line-height: 21px;
-              padding: 0 7px;
-              color: $mainGray;
-              font-size: 14px;
-              border-radius: 4px;
-
-              &.active {
-                background: $mainOrange;
-                font-weight: bold;
-                color: #fff;
-              }
-
-              & + .graphFilter {
-                margin-left: 13px;
-              }
-            }
-          }
-        }
-        .statWrap {
-          height: 98px;
-          margin-top: 32px;
-
-          .statRow {
-            padding: 0;
-
-            .graphLine {
-              position: relative;
-              z-index: 3;
-              height: 100%;
-              width: 100%;
-              background: url('../images/icons/graph_line.svg') no-repeat;
-              background-size: contain;
-              background-position: center 4px;
-            }
-
-            .tappedWrap {
-              position: absolute;
-              right: 78px;
-              top: -20px;
-
-              .thumb {
-                z-index: 3;
-                position: relative;
-                top: 0;
-                left: 0;
-                margin: 5px auto 0;
-              }
-
-              .tooltip {
-                opacity: 1;
-                visibility: visible;
-                position: relative;
-                display: block;
-                color: #fff;
-                padding: 4px 5px;
-                font-size: 13px;
-                line-height: 21px;
-              }
-            }
-          }
-
-          .statDays {
-            margin-top: 16px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            position: relative;
-            left: -15px;
-
-            span {
-              display: block;
-              flex-shrink: 0;
-              width: 44px;
-              color: $mainGray;
-              font-size: 13px;
-              line-height: 20px;
-
-              &.active {
-                color: $mainBlack;
-                font-family: $sfPro;
-                font-weight: bold;
-              }
-
-              & + span {
-                margin-left: 13px;
-              }
-            }
-          }
-        }
-      }
-
       &.limitBlock {
         padding: 26px 0;
       }
 
+      &.spendingBlock {
+        padding-top: 21px;
+        padding-bottom: 20px;
+
+        .titleWrap {
+          .calendarTrigger {
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: url('../images/icons/calendar_icon.svg') no-repeat
+              center/contain;
+          }
+        }
+        .spendingWrap {
+          margin-top: 8px;
+          padding: 0 20px;
+
+          .graphWrap {
+            position: relative;
+
+            .graph {
+              max-width: 232px;
+              width: 100%;
+              margin: 0 auto;
+            }
+
+            .spendingSummary {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: -2px;
+              left: 0;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .period {
+                font-size: 16px;
+                line-height: 14px;
+                color: $mainGray;
+                margin-bottom: 8px;
+              }
+
+              .spent {
+                font-family: $sfProSemi;
+                font-size: 20px;
+                line-height: 20px;
+              }
+            }
+          }
+
+          .selectedCategoryInfo {
+            margin-top: 20px;
+            justify-content: space-between;
+
+            .categoryName {
+              font-size: 16px;
+              line-height: 14px;
+              color: $mainGray;
+
+              &:before {
+                content: '';
+                display: inline-block;
+                position: relative;
+                top: -1px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin-right: 8px;
+                background: $mainOrange;
+              }
+            }
+
+            .categorySummary {
+              justify-content: flex-end;
+              font-family: $sfProSemi;
+              font-size: 14px;
+              line-height: 12px;
+              color: $mainGray;
+              text-align: right;
+
+              .price {
+                color: $mainBlack;
+                margin-right: 8px;
+              }
+              .percentage {
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+      }
+
       &.setLimitBlock {
-        padding: 20px 20px 16px;
+        padding: 20px 20px 15px;
 
         .titleWrap {
           padding: 0;
@@ -175,7 +174,7 @@ $sfProBold: 'SF Pro Display Bold';
         padding-bottom: 32px;
 
         .calendarHead {
-          padding: 0 20px 24px;
+          padding: 0 20px 25px;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
@@ -319,6 +318,8 @@ $sfProBold: 'SF Pro Display Bold';
 
       &.statBlock {
         overflow: hidden;
+        padding-top: 20px;
+
         .titleWrap {
           .rightTitle {
             display: flex;
@@ -350,6 +351,105 @@ $sfProBold: 'SF Pro Display Bold';
                 height: 8px;
                 border-radius: 50%;
                 margin-right: 8px;
+              }
+            }
+          }
+        }
+      }
+
+      &.graphBlock {
+        padding-top: 24px;
+        padding-bottom: 20px;
+
+        .titleWrap {
+          padding-right: 13px;
+          .rightTitle {
+            .graphFilter {
+              line-height: 21px;
+              padding: 0 7px;
+              color: $mainGray;
+              font-size: 14px;
+              border-radius: 4px;
+
+              &.active {
+                background: $mainOrange;
+                font-weight: bold;
+                color: #fff;
+              }
+
+              & + .graphFilter {
+                margin-left: 13px;
+              }
+            }
+          }
+        }
+        .statWrap {
+          height: 98px;
+          margin-top: 32px;
+
+          .statRow {
+            padding: 0;
+
+            .graphLine {
+              position: relative;
+              z-index: 3;
+              height: 100%;
+              width: 100%;
+              background: url('../images/icons/graph_line.svg') no-repeat;
+              background-size: contain;
+              background-position: center 4px;
+            }
+
+            .tappedWrap {
+              position: absolute;
+              right: 78px;
+              top: -20px;
+
+              .thumb {
+                z-index: 3;
+                position: relative;
+                top: 0;
+                left: 0;
+                margin: 5px auto 0;
+              }
+
+              .tooltip {
+                opacity: 1;
+                visibility: visible;
+                position: relative;
+                display: block;
+                color: #fff;
+                padding: 4px 5px;
+                font-size: 13px;
+                line-height: 21px;
+              }
+            }
+          }
+
+          .statDays {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            position: relative;
+            left: -15px;
+
+            span {
+              display: block;
+              flex-shrink: 0;
+              width: 44px;
+              color: $mainGray;
+              font-size: 13px;
+              line-height: 20px;
+
+              &.active {
+                color: $mainBlack;
+                font-family: $sfPro;
+                font-weight: bold;
+              }
+
+              & + span {
+                margin-left: 13px;
               }
             }
           }
@@ -618,7 +718,7 @@ $sfProBold: 'SF Pro Display Bold';
           height: 44px;
           background: $skyBlueBg url('../images/icons/plus.svg') no-repeat
             center/14px;
-          margin: 24px auto 0;
+          margin: 25px auto 0;
           border-radius: 8px;
         }
       }
